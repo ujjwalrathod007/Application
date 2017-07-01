@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="26dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:clickable="true"
+        android:onClick="nextAct"
+        app:fabSize="mini"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <SearchView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:background="@color/colorPrimaryDark"
+        android:layout_above="@+id/floatingActionButton3"
+        android:layout_alignLeft="@+id/floatingActionButton3"
+        android:layout_alignStart="@+id/floatingActionButton3"
+        android:layout_marginBottom="18dp"
+        android:id="@+id/searchView" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/searchView"
+        android:layout_toRightOf="@+id/searchView"
+        android:layout_gravity="bottom|right"
+        android:gravity="center"
+        android:layout_alignLeft="@+id/searchView"
+        android:layout_alignStart="@+id/searchView"
+        android:id="@+id/textInputLayout3">
+
+    </android.support.design.widget.TextInputLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/searchView"
+        android:layout_alignLeft="@+id/searchView"
+        android:layout_alignStart="@+id/searchView"
+        android:layout_marginBottom="13dp"
+        android:background="@android:drawable/button_onoff_indicator_on"
+        app:srcCompat="@android:drawable/ic_menu_preferences" />
+</RelativeLayout>
